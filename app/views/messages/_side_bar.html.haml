@@ -1,7 +1,7 @@
 .side_bar
   .header__side
     .side__massage
-      a
+      = current_user.name
     .side__btn
       =link_to "#", class: "contents__btn" do
         = icon 'fas', 'edit'
