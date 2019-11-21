@@ -9,14 +9,16 @@
         %ul.left-header__members
           Member：
           %li.member
-          -# - current_user.groups.each do |group|
+            - @group.users.each do |member|
+              = member.name
+            
       .right-header
         .right-header__button
-          = link_to 'Edit', new_group_path
+          = link_to 'Edit', edit_group_path(@group)
     .messages
       = render @messages
     .form
-      = form_for [@group, @message] do |f|
+      = form_for [@group, @message], class: "new_message"  do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
         .form__mask
           = f.label :image, class: 'form__mask__image' do
