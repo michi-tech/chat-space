@@ -1,8 +1,11 @@
 .side-bar {
-  box-sizing: border-box;
   color: $white;
   width: 300px;
-  
+  box-sizing: border-box;
+  a:visited {
+    color:#ffffff;
+     }
+
   .header {
     background-color: $side_blue_dark;
     height: 100px;
@@ -30,6 +33,8 @@
     background-color: $side_blue_light;
     height: calc(100vh - 100px);
     padding: 0 20px;
+    width: 260px;
+    overflow: scroll;
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
