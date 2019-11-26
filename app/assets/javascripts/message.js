@@ -1,5 +1,4 @@
 $(function() {
-
   function buildHTML(message){
     var image = message.image ?  `<img class="lower-message__image" img src="${ message.image }">` : "";
     var html = `<div class="message" data-message-id=${message.id}>
@@ -9,7 +8,7 @@ $(function() {
             ${message.user_name}
           </div>
           <div class="upper-message__date">
-            ${message.date}
+            ${message.created_at}
           </div>
         </div>
         <div class="lower-message">
