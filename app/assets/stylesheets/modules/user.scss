@@ -24,7 +24,7 @@
       letter-spacing: 3px;
       font-size: 40px;
       font-weight: 200;
-
+      color: black;
       &:after {
         content: '';
         display: block;
@@ -40,11 +40,13 @@
       font-weight: 200;
     }
 
-    .btn {
-      margin-top: 20px;
+    a {
+      margin: 20px  0 0;
+      padding: 20px 30px;
       color: #fff;
       background-color: #ccc;
       font-size: 14px;
+      text-decoration: none;
     }
   }
 

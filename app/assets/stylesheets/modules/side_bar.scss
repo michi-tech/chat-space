@@ -2,6 +2,7 @@
   color: $white;
   width: 300px;
   box-sizing: border-box;
+
   a:visited {
     color:#ffffff;
      }
@@ -10,7 +11,7 @@
     background-color: $side_blue_dark;
     height: 100px;
     line-height: 100px;
-    padding: 0 20px;
+    padding: 2px 20px;
     &__name {
       display: inline-block;
       font-size: $side_header_font;
@@ -35,6 +36,9 @@
     padding: 0 20px;
     width: 260px;
     overflow: scroll;
+    a {
+      text-decoration: none;
+    }
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
